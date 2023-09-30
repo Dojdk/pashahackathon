@@ -6,8 +6,6 @@ import 'package:pashahackathon/widgets/main/link.dart';
 import 'package:pashahackathon/widgets/main/mybonus.dart';
 import 'package:pashahackathon/widgets/main/selectedmarket.dart';
 
-import '../theme/fonts.dart';
-
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 

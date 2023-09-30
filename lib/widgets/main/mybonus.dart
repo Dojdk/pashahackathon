@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../theme/fonts.dart';
 import 'mybonusitem.dart';
@@ -8,28 +9,38 @@ class MyBonys extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'My bonus',
           style: size14weight500,
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              '1,3%',
-              style: size40weight500,
+            Row(
+              children: [
+                const Text(
+                  '1,3',
+                  style: size40weight500,
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                SvgPicture.asset(
+                  'assets/images/svg/umicoinicon.svg',
+                ),
+              ],
             ),
-            MyBonusItem(
+            const MyBonusItem(
               title: 'My referrals',
             ),
-            MyBonusItem(
+            const MyBonusItem(
               title: 'My referrals',
               subtitle: '',
             ),

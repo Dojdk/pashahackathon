@@ -15,7 +15,8 @@ class MyBonusItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.all(10),
+          height: 60,
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             border: Border.all(color: lightGreyColor),
@@ -26,9 +27,11 @@ class MyBonusItem extends StatelessWidget {
                   color: purpleColor,
                   size: 34,
                 )
-              : CountdownTimer(
-                  endTime: endTime,
-                  textStyle: size16weight600.copyWith(color: purpleColor),
+              : Center(
+                  child: CountdownTimer(
+                    endTime: endTime,
+                    textStyle: size16weight600.copyWith(color: purpleColor),
+                  ),
                 ),
         ),
         Text(title, style: size12weight500),

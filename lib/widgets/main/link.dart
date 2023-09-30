@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:share_plus/share_plus.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../pages/qrcodepage.dart';
 
@@ -20,7 +20,7 @@ class CopyLink extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Text(
-              'Copy link',
+              'Referral link',
               style: size14weight500,
             ),
             TextButton(
@@ -53,7 +53,7 @@ class CopyLink extends StatelessWidget {
               const Spacer(),
               IconButton(
                 onPressed: () {
-                  // Share.share('https://umico.az/');
+                  Share.share('https://umico.az/');
                 },
                 icon: SvgPicture.asset('assets/images/svg/shareicon.svg'),
               ),
